@@ -14,6 +14,7 @@ public class Derecha extends Fragment{
 
    View rootView;
     TextView txt;
+    
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState){
 
