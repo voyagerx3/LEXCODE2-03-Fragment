@@ -15,6 +15,7 @@
         android:layout_height="match_parent"
         class="it.escuela.lexdroid2.clase2.lexcode2_03_fragment.Izquierda"
         />
+    
 
     <fragment
         android:id="@+id/derecha"
