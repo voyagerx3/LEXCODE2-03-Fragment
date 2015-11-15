@@ -24,4 +24,8 @@ public class Derecha extends Fragment{
         return rootView;
     }
 
+    public void Obtener(String mensaje){
+        txt.setText(mensaje);
+    }
+
 }
