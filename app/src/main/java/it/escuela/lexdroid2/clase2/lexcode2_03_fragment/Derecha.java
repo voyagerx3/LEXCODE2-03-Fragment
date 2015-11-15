@@ -17,7 +17,7 @@ public class Derecha extends Fragment{
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState){
 
-        rootView = inflater.inflate(R.layout.izquierda,container,false);
+        rootView = inflater.inflate(R.layout.derecha,container,false);
 
         txt = (TextView) rootView.findViewById(R.id.txt);
 
