@@ -13,7 +13,7 @@
         android:layout_width="0dp"
         android:layout_weight="5"
         android:layout_height="match_parent"
-        class=""
+        class="it.escuela.lexdroid2.clase2.lexcode2_03_fragment.Izquierda"
         />
 
     <fragment
@@ -21,7 +21,7 @@
         android:layout_width="0dp"
         android:layout_weight="5"
         android:layout_height="match_parent"
-        class=""
+        class="it.escuela.lexdroid2.clase2.lexcode2_03_fragment.Derecha"
         />
 
 
