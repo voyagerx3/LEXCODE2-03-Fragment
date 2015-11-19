@@ -12,21 +12,21 @@ import android.widget.TextView;
  */
 public class Derecha extends Fragment{
 
-   View rootView;
-    TextView txt;
+    View rootView;
+    TextView txt_firstname;
     
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState){
 
         rootView = inflater.inflate(R.layout.derecha,container,false);
 
-        txt = (TextView) rootView.findViewById(R.id.txt);
+        txt_firstname = (TextView) rootView.findViewById(R.id.txt_firstname);
 
         return rootView;
     }
 
     public void Obtener(String mensaje){
-        txt.setText(mensaje);
+        txt_firstname.setText(mensaje);
     }
 
 }
