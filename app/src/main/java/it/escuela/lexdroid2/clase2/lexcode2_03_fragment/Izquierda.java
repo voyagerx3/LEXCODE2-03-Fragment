@@ -14,21 +14,21 @@ import android.widget.EditText;
  */
 public class Izquierda extends Fragment {
     View rootView;
-    Button boton;
-    EditText text;
+    Button buscar;
+    EditText nombre;
     Enviar ENVIAR;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState) {
         rootView = inflater.inflate(R.layout.izquierda, container, false);
 
-        text = (EditText) rootView.findViewById(R.id.text);
-        boton = (Button) rootView.findViewById(R.id.boton);
+        nombre = (EditText) rootView.findViewById(R.id.nombre);
+        buscar = (Button) rootView.findViewById(R.id.buscar);
 
-        boton.setOnClickListener(new View.OnClickListener() {
+        buscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String mensaje;
-                mensaje = text.getText().toString();
+                mensaje = nombre.getText().toString();
                 //utilizamos la interfaz
                 ENVIAR.enviarTexto(mensaje);
             }

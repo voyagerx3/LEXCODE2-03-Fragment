@@ -5,13 +5,34 @@
     android:orientation="vertical"
     >
     <EditText
-        android:id="@+id/text"
+        android:id="@+id/nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:inputType="text"
+        android:editable="true"
+        android:elegantTextHeight="true"
+        android:enabled="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/apellido" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/telefono"
+        android:layout_gravity="center_horizontal" />
+
     <Button
-        android:id="@+id/boton"
+        android:id="@+id/buscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enviar"/>
+        android:text="Buscar"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insertar"
+        android:id="@+id/insertar" />
 </LinearLayout>

@@ -6,7 +6,7 @@
     tools:context=".MainActivity"
     android:orientation="horizontal"
     android:weightSum="18"
-    >
+    android:baselineAligned="false">
 
     <fragment
         android:id="@+id/izquierda"
