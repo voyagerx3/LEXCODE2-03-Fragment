@@ -17,6 +17,7 @@ public class Izquierda extends Fragment {
     Button bt_buscar,bt_insertar,bt_actualizar,bt_borrar;
     EditText et_firstname,et_lastname,et_phone;
     Enviar ENVIAR;
+    InterAccion interAccion;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState) {
         rootView = inflater.inflate(R.layout.izquierda, container, false);
@@ -27,10 +28,14 @@ public class Izquierda extends Fragment {
         bt_buscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String mensaje;
-                mensaje = et_firstname.getText().toString();
+                String accion,nombre,apellido,phone;
+                accion="buscar";
+                nombre = et_firstname.getText().toString();
+                apellido = et_lastname.getText().toString();
+                phone = et_phone.getText().toString();
                 //utilizamos la interfaz
-                ENVIAR.enviarTexto(mensaje);
+
+                interAccion.enviarAccion(accion,nombre,apellido,phone );
             }
         });
 
@@ -42,7 +47,8 @@ public class Izquierda extends Fragment {
         super.onAttach(activity);
 
         try{
-            ENVIAR = (Enviar) activity;
+           // ENVIAR = (Enviar) activity;
+            interAccion=(InterAccion) activity;
         }
         catch (ClassCastException e ){
             throw new ClassCastException("necesitas el msg");
